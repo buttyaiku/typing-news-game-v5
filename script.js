@@ -1,0 +1,1 @@
+console.log('Typing News Game v5 script loaded.');
