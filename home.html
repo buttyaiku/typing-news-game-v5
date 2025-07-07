@@ -1,8 +1,56 @@
+
 <!DOCTYPE html>
-<html lang='en'>
-<head><meta charset='UTF-8'><title>Home - Typing News Game</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typing News Game v5</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .mode-buttons button {
+      font-size: 20px;
+      margin: 10px;
+      padding: 10px 20px;
+    }
+    .note {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+    .link-area {
+      margin-top: 20px;
+    }
+    .link-area a {
+      font-size: 18px;
+      text-decoration: none;
+      color: #0077cc;
+    }
+  </style>
+</head>
 <body>
-<h1>Typing News Game</h1>
-<p><a href='game.html'>Start Game</a> | <a href='edit.html'>Edit Problems</a></p>
+  <h1>Typing News Game v5</h1>
+  <p>モードを選んでゲームを始めよう</p>
+  <div class="mode-buttons">
+    <button onclick="location.href='game.html?mode=1q'">1問</button>
+    <button onclick="location.href='game.html?mode=5q'">5問</button>
+    <button onclick="location.href='game.html?mode=10q'">10問</button>
+    <button onclick="location.href='game.html?mode=1m'">1分</button>
+    <button onclick="location.href='game.html?mode=3m'">3分</button>
+  </div>
+  <div class="link-area">
+    <a href="edit.html">問題を登録する</a>
+  </div>
+  <div class="note">
+    ※ スコア計算方法：<br>
+    (正タイプ数×10 − ミスタイプ数×5) ÷ 経過秒数 × 60
+  </div>
 </body>
 </html>
